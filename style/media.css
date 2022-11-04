@@ -23,7 +23,7 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
 
 }
 
@@ -56,14 +56,45 @@
     .front__btn {
         margin: 0 auto;
     }
-    
-    .accordion {
-        margin-bottom: 30px;
-    }
 }
 
 @media(max-width: 410px) {
     .footer__link {
         font-size: 18px;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --white: #151437;
+        --black: #FFFFFF;
+        --violet: #7177F1;
+    }
+     .navbar-nav__link-order,
+     .slider__btn,
+     .front__btn,
+     .works__btn,
+     .front__five,
+     .accordion-button:not(.collapsed),
+     .accordion-body,
+     .accordion-button:not(.collapsed)::after,
+     .footer__link {
+        color: var(--black) !important;
+    }
+
+    .carousel-indicators button {
+        background: var(--black) !important;
+    }
+
+    .front__label {
+        background: var(--violet);
+    }
+
+    .accordion-button {
+        background: var(--white);
+    }
+
+    .footer__link:hover {
+        border-bottom: 1px solid var(--black);
     }
 }

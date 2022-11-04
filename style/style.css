@@ -29,6 +29,7 @@ body {
 }
 
 body {
+    background: var(--white);
     line-height: 1.5;
 }
 
@@ -343,6 +344,15 @@ ul {
 
 .front {
     margin-bottom: 75px;
+    position: relative;
+}
+
+.front__svg {
+    position: absolute;
+    width: max-content;
+    right: 0;
+    z-index: -1;
+    bottom: -250px;
 }
 
 .accordion-button {
@@ -450,6 +460,16 @@ ul {
 
 .works {
     padding-bottom: 220px;
+    position: relative;
+}
+
+.works__svg {
+    position: absolute;
+    width: max-content;
+    left: 0;
+    z-index: -1;
+    top: -222px;
+
 }
 
 .works .nav-pills {
