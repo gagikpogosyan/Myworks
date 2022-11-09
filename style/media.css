@@ -66,7 +66,7 @@
 
 @media(prefers-color-scheme: dark) {
     :root {
-        --white: #151437;
+        --white: #000000;
         --black: #FFFFFF;
         --violet: #7177F1;
     }
